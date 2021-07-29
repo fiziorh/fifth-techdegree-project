@@ -1,0 +1,22 @@
+/* Error: This file is already being loaded.
+ *   ,--> scss/_grid.scss
+ * 1 | @import 'grid';
+ *   |         ^^^^^^ new load
+ *   '
+ *   ,--> scss/style.scss
+ * 2 | @import 'grid' ;
+ *   |         ====== original load
+ *   '
+ *   scss/_grid.scss 1:9  @import
+ *   scss/style.scss 2:9  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: This file is already being loaded.\a   \250c \2500 \2500 > scss/_grid.scss\a 1 \2502  @import 'grid';\a   \2502          ^^^^^^ new load\a   \2575 \a   \250c \2500 \2500 > scss/style.scss\a 2 \2502  @import 'grid' ;\a   \2502          \2501 \2501 \2501 \2501 \2501 \2501  original load\a   \2575 \a   scss/_grid.scss 1:9  @import\a   scss/style.scss 2:9  root stylesheet";
+}
