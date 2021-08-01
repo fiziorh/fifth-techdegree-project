@@ -1,22 +1,48 @@
-/* Error: This file is already being loaded.
- *   ,--> scss/_grid.scss
- * 1 | @import 'grid';
- *   |         ^^^^^^ new load
- *   '
- *   ,--> scss/style.scss
- * 2 | @import 'grid' ;
- *   |         ====== original load
- *   '
- *   scss/_grid.scss 1:9  @import
- *   scss/style.scss 2:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: This file is already being loaded.\a   \250c \2500 \2500 > scss/_grid.scss\a 1 \2502  @import 'grid';\a   \2502          ^^^^^^ new load\a   \2575 \a   \250c \2500 \2500 > scss/style.scss\a 2 \2502  @import 'grid' ;\a   \2502          \2501 \2501 \2501 \2501 \2501 \2501  original load\a   \2575 \a   scss/_grid.scss 1:9  @import\a   scss/style.scss 2:9  root stylesheet";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", serif;
 }
+
+li {
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+main {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container {
+  padding-top: 40px;
+  padding-left: 2rem;
+  margin: 0 auto;
+  display: grid;
+  width: auto;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  justify-content: center;
+}
+
+.search {
+  margin: 0 auto;
+  border-radius: 5px;
+  display: block;
+  width: 45%;
+  height: 2.5rem;
+  transition: 1s;
+  border-color: #fff;
+}
+.search:hover {
+  border-color: #cccccc;
+}
+
+/*# sourceMappingURL=style.css.map */

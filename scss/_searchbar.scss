@@ -1,0 +1,12 @@
+.search {
+    margin:0 auto;
+    border-radius: 5px;
+    display: block;
+    width: 45%;
+    height: 2.5rem;
+    transition: 1s;
+    border-color: $searchbar;
+    &:hover {
+        border-color: $searchbar_;
+    }
+}
