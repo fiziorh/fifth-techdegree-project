@@ -9,6 +9,10 @@ li {
   list-style: none;
 }
 
+.items {
+  margin: 0 auto;
+}
+
 h1 {
   text-align: center;
   margin-top: 1rem;
@@ -23,7 +27,8 @@ main {
 
 .container {
   padding-top: 40px;
-  padding-left: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   margin: 0 auto;
   display: grid;
   width: auto;
