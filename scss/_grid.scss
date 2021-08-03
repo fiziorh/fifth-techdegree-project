@@ -6,6 +6,7 @@
     display: grid;  
     width: auto;
     grid-template-columns: repeat(auto-fit,minmax(200px, min-content));
+    // the min-content is making the items not taking up too much spaces
     gap: 1rem;
     justify-content: center; 
 }
