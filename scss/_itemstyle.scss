@@ -1,0 +1,9 @@
+.items {
+    transition: 0.5s; 
+    box-shadow: 4px 3px 10px 0px rgba(0,0,0,0.45);
+-webkit-box-shadow: 4px 3px 10px 0px rgba(0,0,0,0.45);
+-moz-box-shadow: 4px 3px 10px 0px rgba(0,0,0,0.45);
+    &:hover {
+        transform: scale(1.1);
+    }
+}
